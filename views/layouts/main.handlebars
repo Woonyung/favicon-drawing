@@ -1,0 +1,287 @@
+<!--
+  __  __      _        _                       _   
+ |  \/  |__ _(_)_ _   | |   __ _ _  _ ___ _  _| |_ 
+ | |\/| / _` | | ' \  | |__/ _` | || / _ \ || |  _|
+ |_|  |_\__,_|_|_||_| |____\__,_|\_, \___/\_,_|\__|
+                                 |__/          
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<!-- =====================   Libraries   ===================== -->
+    <link rel="shortcut icon" href="/pulic/favicon.ico" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script charset="utf-8" src="http://cdnjs.cloudflare.com/ajax/libs/paper.js/0.9.12/paper.js"></script>
+
+
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+
+<!-- =====================   stylesheet   ===================== -->
+    <style type="text/css">
+        body{
+            background-color: #e5e0d8; 
+            font-family: 'Varela Round', sans-serif; 
+            font-size: 10px;
+            color: #7f7f7f;
+        }
+
+        #topMargin{
+            height:15px;
+            /*background-color: red;*/
+        }
+
+        #container{
+            width: 880px;
+            height: 765px;
+            margin: 0 auto;
+
+            /*background-image: url("sketch/b1.png");*/
+            /*background-repeat: no-repeat;*/
+            /*background-color: rgba(255,0,255,0.3);*/
+
+        }
+
+        #footer{
+            width:840px;
+            height:40px;
+            margin: 0 auto;
+
+        }
+
+        #footerContainer{
+            width:220px;
+            float: right;
+        }
+
+            /* TOP BOX */
+            #TopBox{
+                width: 870px;
+                height: 163px;
+                background-repeat: no-repeat;
+                /*background-color: blue;*/
+            }
+              
+            /* background */  
+            #tBox-background1{
+                width: 870px;
+                height: 162px;
+                background: url("/public/sketch/b_02.png");
+                /*background-color: yellow;*/
+            }
+
+            #tBox-background2{
+                width: 870px;
+                height: 162px;
+                /*background-color: yellow;*/
+            }
+            /* * */ 
+
+                #tBox1{
+                    width:570px;
+                    height: 163px;
+                    float: right;
+                }
+
+                 #tBox1 ol, #tBox2 ol {
+                    list-style:none;
+                    /*margin-left: 20px;*/
+                    margin-top: 0;
+                }
+
+                #tBox1 li {
+                    display:inline;
+                    padding-left:1px;
+                }     
+
+                #formbox{
+                    float: right;
+                    margin-top: 28px;
+                    width:125px;
+                    height:162px;
+
+                    /*background-color: pink;*/
+                }
+
+
+            /****************** BUTTON FORMS *****************/
+            input[type="text"] {
+                border-style: none;
+                width: 85px;
+                /*height: 23px;*/
+                /*background: url("/public/sketch/00_0_0.png");*/
+                background-color: white;
+            }
+
+            input[type=submit] {
+                background: url("/public/sketch/00_4.png");
+                border: 0;
+                text-indent:-9999px;
+                position: absolute;
+
+                width: 84px;
+                height: 164px;
+            }
+
+
+            input[type=submit]:hover {
+                background: url("/public/sketch/00_4_r.png");
+            }
+
+            /************************************************/
+
+
+            /* MAIN BOXES - TOOL BOX , CANVAS */
+            #LeftBox{
+                width: 258px;
+                height: 604px;
+
+                float: left;
+                /*background-color: yellow;*/
+
+            }
+                /* TOOL BOX */
+                #box1{
+                    width: 257px;
+                    height: 390px;
+                    background-image: url("/public/sketch/01_1.png");
+                    background-repeat: no-repeat;
+
+                }
+                    #imageWrapper1{
+                        width: 215px;
+                        height: 350px;
+
+                        margin: 0 auto;
+                        padding-top: 30px;
+                    }
+                    #imageWrapper2{
+                        width: 215px;
+                        height: 350px;
+
+                        margin: 0 auto;
+                        padding-top: 30px;
+                        opacity: 0.5;
+                    }
+
+
+                /* COLOR PALETTE */
+                #box2{
+                    width: 257px;
+                    height: 214px;
+                    background-image: url("/public/sketch/01_2.png");
+                    background-repeat: no-repeat;
+                }
+
+                #colorBox, #colorBox2{
+                    margin-left: 10px;
+                    width: 250px;
+                    height: 214px;
+                    margin-bottom: 0;
+                    /*background-color: blue;*/
+                }
+
+
+                #colorBox img{
+                    padding:0px;
+                    border:0px;
+                    margin:-4px;
+                }
+
+                #colorBox2 img{
+                    padding:0px;
+                    border:0px;
+                    margin:-4px;
+                    opacity: 0.5;
+                }
+
+            #RightBox{
+                width: 600px;
+                height: 604px;
+                float: left;
+                background-color: rgba(255,255,255,0.5);
+            }
+
+                #myCanvas{
+                    background-color: white;
+                    width:600px;
+                    height: 600px;
+                }
+
+            #favBoxOutside{
+                width:590px;
+                height: 600px;
+                /*margin: 0 auto;*/
+                margin: 0 auto;
+                /*background-color: pink;*/
+
+            }
+
+            #favBox{
+                font-family: 'Varela Round', sans-serif;
+                font-size:  10px;
+                color: #939393;
+                background-color: white;
+
+                width: 55px;
+                height: 70px;
+
+                float: left;
+
+                /* outside margin */
+                margin-top: 10px;
+                margin-left: 9px;
+                margin-right: 9px;
+                margin-bottom: 10px;
+
+                /* inside of the box*/
+                padding-top: 10px;
+                padding-left: 20px;
+            }
+            #favBoxCon{
+                margin: 0 auto;
+            }
+
+            .galleryImages{
+            width: 35px;
+            height: 35px;
+            }
+
+        /************************************************/
+
+        .hidden{
+            display: none;
+        }
+
+           
+
+
+    </style>
+
+<!-- ========================================================== -->
+
+    <body>
+        <div id="topMargin"></div>
+        <div id="container">
+            {{{ body }}}
+        </div>
+        
+        <div id="footer">
+            <div id="footerContainer">
+                <br>
+                {{!-- <hr noshade size="1"></hr>    --}}
+                {{!-- (c) 2014 Project is done by Woonyung Choi.<br> --}}
+                <br>
+                
+            </div>
+        </div>
+
+
+    </body>
+    <script type="text/javascript" src="/public/main.js"></script>
+</html>

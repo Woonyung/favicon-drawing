@@ -1,0 +1,92 @@
+<!--
+  ___                  _             ___               
+ |   \ _ _ __ ___ __ _(_)_ _  __ _  | _ \__ _ __ _ ___ 
+ | |) | '_/ _` \ V  V / | ' \/ _` | |  _/ _` / _` / -_)
+ |___/|_| \__,_|\_/\_/|_|_||_\__, | |_| \__,_\__, \___|
+                             |___/           |___/  
+                               
+-->
+<div id="TopBox">
+    <div id="tBox-background1">
+        <div id="tBox1">
+        <form id="theForm"> 
+            <ol>
+                <li><a href="/gallery"><img src="/public/sketch/00_1.png" id="gallery"></a></li> <!-- gallery -->
+                <li><a href="#" id="resetF" ><img src="/public/sketch/00_2.png" id="reset"></a></li> <!-- reset button -->
+                <li><a hre="#" id="downloadF"><img src="/public/sketch/00_3.png" id="download"></a></li> <!-- download button -->
+                <li>
+                <div id="formbox">
+                    <input id="theTitle" type="text" name="title" value="title">
+                    {{!-- <input id="theName" type="text" name="name" value="artist"> --}}
+
+                </div>
+                <input id="submit" type="submit" onfocus='blur()'></li> <!-- submit -->
+            </ol>
+        </form>
+        </div> <!--tBox3-->
+                    
+    </div> 
+</div>
+
+<div id="LeftBox">
+               
+        <!-- tool boxes -->
+        <div id="box1">
+            <div id="imageWrapper1">
+                <a href="#" onclick="tool1.activate();"><img src="/public/sketch/02_1.png"></a>
+                <a href="#" onclick="tool2.activate();"><img src="/public/sketch/02_2.png"></a>
+                <a href="#" onclick="tool3.activate();"><img src="/public/sketch/02_3.png"></a>
+                <a href="#" onclick="tool4.activate();"><img src="/public/sketch/02_4_1.png"></a>
+                <a href="#" onclick="tool5.activate();"><img src="/public/sketch/02_5.png"></a>
+                <a href="#" onclick="tool6.activate();"><img src="/public/sketch/02_6.png"></a>
+            </div>
+        </div>
+
+                
+        <!-- color palettes -->
+        <div id="box2">
+            <div id="colorBox">
+                <a href="#" onclick="color1.onMouseDown()"><img src="/public/sketch/05_1.png"></a>
+                <a href="#" onclick="color2.onMouseDown()"><img src="/public/sketch/05_2.png"></a>
+                <a href="#" onclick="color3.onMouseDown()"><img src="/public/sketch/05_3.png"></a>
+                <a href="#" onclick="color4.onMouseDown()"><img src="/public/sketch/05_4.png"></a>
+                <a href="#" onclick="color5.onMouseDown()"><img src="/public/sketch/05_5.png"></a>
+
+
+                <a href="#" onclick="color6.onMouseDown()"><img src="/public/sketch/05_6.png"></a>
+                <a href="#" onclick="color7.onMouseDown()"><img src="/public/sketch/05_7.png"></a>
+                <a href="#" onclick="color8.onMouseDown()"><img src="/public/sketch/05_8.png"></a>
+                <a href="#" onclick="color9.onMouseDown()"><img src="/public/sketch/05_9.png"></a>
+                <a href="#" onclick="color10.onMouseDown()"><img src="/public/sketch/05_10.png"></a>
+
+
+                <a href="#" onclick="color11.onMouseDown()"><img src="/public/sketch/05_11.png"></a>
+                <a href="#" onclick="color12.onMouseDown()"><img src="/public/sketch/05_12.png"></a>
+                <a href="#" onclick="color13.onMouseDown()"><img src="/public/sketch/05_13.png"></a>
+                <a href="#" onclick="color14.onMouseDown()"><img src="/public/sketch/05_14.png"></a>
+                <a href="#" onclick="color15.onMouseDown()"><img src="/public/sketch/05_15.png"></a>
+
+                <a href="#" onclick="color16.onMouseDown()"><img src="/public/sketch/05_16.png"></a>
+                <a href="#" onclick="color17.onMouseDown()"><img src="/public/sketch/05_17.png"></a>
+                <a href="#" onclick="color18.onMouseDown()"><img src="/public/sketch/05_18.png"></a>
+                <a href="#" onclick="color19.onMouseDown()"><img src="/public/sketch/05_19.png"></a>
+                <a href="#" onclick="color20.onMouseDown()"><img src="/public/sketch/05_20.png"></a>
+
+            </div>
+        </div>
+</div>
+
+
+
+<!--  brushes -->
+<!-- this is temporary thing -->
+<img src="/public/sketch/03_1.png" class="hidden" id="brush1"> 
+
+
+<div id="RightBox">
+        <canvas id="myCanvas"></canvas>
+</div>
+
+
+
+{{!-- <div id="gallery"></div> --}}
