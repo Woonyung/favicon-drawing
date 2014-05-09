@@ -1,5 +1,3 @@
-// This project is done by Woonyung Choi.
-
 paper.install(window);
     // Keep global references to both tools, so the HTML
     // links below can access them.
