@@ -53,6 +53,7 @@ paper.install(window);
         });
 
         $("#undo").click(function(){ 
+            //delete children one by one
             var pathCount = paper.project.activeLayer.children.length;
             console.log(paper.project.activeLayer);
             paper.project.activeLayer.removeChildren(pathCount-1,pathCount);
@@ -170,11 +171,8 @@ paper.install(window);
                 //JSON.parse(data);
                 console.log(data);
 
-
-                //Add code to clear the canvas
+                //clear the canvas
                 paper.project.activeLayer.removeChildren();
-                
-                //Thank them
 
                 //Send them to the gallery
                 document.location.href = '/gallery';
