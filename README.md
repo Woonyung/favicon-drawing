@@ -10,8 +10,6 @@ You can check out web site [here](http://favicon-drawing.herokuapp.com/)
 	- animation ?
 - cursor! 
 - preview window 
-- download --> gives source code with download button
 - download : resize problem
-- add favicon :)
 
 - share button 
