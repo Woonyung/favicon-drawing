@@ -8,6 +8,7 @@ You can check out web site [here](http://favicon-drawing.herokuapp.com/)
 - make fully-functioned tools...
 	- make square drawing -> pixel (?)
 	- animation ?
+- cursor! 
 - preview window 
 - download --> gives source code with download button
 - download : resize problem

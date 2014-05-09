@@ -1,4 +1,4 @@
- // 10 : paint bucket - with color is working, but weirdly....
+// This project is done by Woonyung Choi.
 
 paper.install(window);
     // Keep global references to both tools, so the HTML
