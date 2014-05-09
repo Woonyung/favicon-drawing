@@ -367,7 +367,6 @@ paper.install(window);
 
 
 
-
         /******************************************************
           _            _    
          | |_ ___  ___| |___
@@ -408,7 +407,7 @@ paper.install(window);
         tool2.onMouseDrag = function(event) {
             // Use the arcTo command to draw cloudy lines
             // path.arcTo(event.point);
-            var circle = new Path.Circle({
+            circle = new Path.Circle({
                 center: event.middlePoint,
                 radius: Math.random()* 20
             });
@@ -484,14 +483,18 @@ paper.install(window);
         /////////////////// TOOL5 : BUCKET ///////////////////
         tool5 = new Tool();
         tool5.onMouseDown = function(event){
-            // console.log("??????");
             cuurentTool = tool5;
             console.log(currentTool);
-            var path = new Path.Rectangle({
+            path = new Path.Rectangle({
                 point: (0 , 0),
                 size: 600,
                 fillColor: currentColor
             });
+        }
+
+        tool5.onMouseUp = function(event){
+            console.log("mouseUp");
+
         }
 
 
