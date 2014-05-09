@@ -92,22 +92,32 @@ paper.install(window);
             $('#popupBox').attr('src','/public/sketch/00_7.png');
         });
 
-
-
-        $("#popupBox").click(function(){
+        $("#popupBox").click(function(e){
+            e.preventDefault();
             $(".popupBox").slideDown("slow");
         });
 
-            $("#closeButton").hover(function(){
-                $('#closeButton').attr('src','/public/sketch/00_6_r.png');
-            });
-            $("#closeButton").mouseleave(function(){ 
-                $('#closeButton').attr('src','/public/sketch/00_6.png');
-            });
+        // close window whenever users press outside of popup window
+        // Bind mouseup event to all the document
+        $(document).mouseup(function(e) {
+            // Check if the click is outside the popup
+            if($(e.target).parents(".popupBox").length ==0 && !$(e.target).is(".popupBox")) {
+              // Hide the popup
+              $(".popupBox").slideUp("slow");
+            }
+        });
 
-            $("#closeButton").click(function(){
-                $(".popupBox").slideUp("slow");
-            });
+        // close button
+        $("#closeButton").hover(function(){
+            $('#closeButton').attr('src','/public/sketch/00_6_r.png');
+        });
+        $("#closeButton").mouseleave(function(){ 
+            $('#closeButton').attr('src','/public/sketch/00_6.png');
+        });
+
+        $("#closeButton").click(function(){
+            $(".popupBox").slideUp("slow");
+        });
 
         /////////////////// POP UP BOX ///////////////////
 
