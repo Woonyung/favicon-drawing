@@ -55,11 +55,48 @@ paper.install(window);
         });
 
 
+        // back //
+        $("#back").hover(function(){
+            $('#back').attr('src','/public/sketch/00_5_r.png');
+        });
+        $("#back").mouseleave(function(){ 
+            $('#back').attr('src','/public/sketch/00_5.png');
+        });
+
+
+
+        // pop up window - button //
+        $("#popupBox").hover(function(){
+            $('#popupBox').attr('src','/public/sketch/00_3_r.png');
+        });
+        $("#popupBox").mouseleave(function(){ 
+            $('#popupBox').attr('src','/public/sketch/00_3.png');
+        });
+
+
+
+        $("#popupBox").click(function(){
+            $(".popupBox").slideDown("slow");
+        });
+
+            $("#closeButton").hover(function(){
+                $('#closeButton').attr('src','/public/sketch/00_6_r.png');
+            });
+            $("#closeButton").mouseleave(function(){ 
+                $('#closeButton').attr('src','/public/sketch/00_6.png');
+            });
+
+            $("#closeButton").click(function(){
+                $(".popupBox").slideUp("slow");
+            });
+
+        /////////////////// POP UP BOX ///////////////////
+
 
         // download //
         $("#download").hover(function(){
             $('#download').attr('src','/public/sketch/00_3_r.png');
-                });
+        });
         $("#download").mouseleave(function(){ 
             $('#download').attr('src','/public/sketch/00_3.png');
         });
@@ -84,15 +121,6 @@ paper.install(window);
 
         }
 
-
-
-        // back //
-        $("#back").hover(function(){
-            $('#back').attr('src','/public/sketch/00_5_r.png');
-                });
-        $("#back").mouseleave(function(){ 
-            $('#back').attr('src','/public/sketch/00_5.png');
-        });
 
 
 

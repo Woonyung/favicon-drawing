@@ -36,6 +36,7 @@ app.get('/', function(req, res){
 });
 
 
+
 app.get('/gallery', function(req, res){
 	Info.find({}, function(err,info){
 		if(err){
@@ -46,6 +47,7 @@ app.get('/gallery', function(req, res){
 		}
 	});
 });
+
 
 //post ---- > executed in the html: form action  
 app.post('/submitFav', function(req,res){

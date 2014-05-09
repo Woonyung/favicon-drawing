@@ -2,25 +2,52 @@
 <div id="TopBox">
     <div id="tBox-background1">
         <div id="tBox1">
-        <form id="theForm"> 
             <ol>
                 <li><a href="/gallery"><img src="/public/sketch/00_1.png" id="gallery"></a></li> <!-- gallery -->
                 <li><a href="#" id="resetF" ><img src="/public/sketch/00_2.png" id="reset"></a></li> <!-- reset button -->
-                <li><a hre="#" id="downloadF"><img src="/public/sketch/00_3.png" id="download"></a></li> <!-- download button -->
-                <li>
-                <div id="formbox">
-                    <input id="theTitle" type="text" name="title" value="title">
-                    {{!-- <input id="theName" type="text" name="name" value="artist"> --}}
 
-                </div>
-                <input id="submit" type="submit" onfocus='blur()'></li> <!-- submit -->
+                <li><a hre="#"><img src="/public/sketch/00_3.png" id="popupBox"></a></li>
+
             </ol>
-        </form>
         </div> <!--tBox3-->
                     
     </div> 
 </div>
 
+<!--POP UP BOX - submit -->
+<div class="popupBox">
+    <div id="close">
+        <img src="/public/sketch/00_6.png" id="closeButton">
+    </div>
+
+    
+    <div id="smallBox1">
+        <a hre="#" id="downloadF"><img src="/public/sketch/00_3.png" id="download"></a><!-- download button -->
+    </div>
+
+    <div id="smallBox2"> 
+        Download your Favicon by pressing the button and save your favicon.ico file into your webserver directory.
+        <br>
+
+        Then, copy and paste the following the code inside of your index.html file.
+        <pre><code> 
+            <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+            <link rel="icon" href="/favicon.ico" type="image/x-icon"> 
+        </code></pre>
+    </div>
+    
+
+
+    <form id="theForm"> 
+        <input id="theTitle" type="text" name="title" value="title">
+        {{!-- <input id="theName" type="text" name="name" value="artist"> --}}
+        <input id="submit" type="submit" onfocus='blur()'></li> <!-- submit -->
+    </form>
+</div>
+
+
+
+<!--LEFT BOX-->
 <div id="LeftBox">
                
         <!-- tool boxes -->
@@ -76,6 +103,8 @@
 <img src="/public/sketch/03_1.png" class="hidden" id="brush1"> 
 
 
+
+<!-- RIGHT BOX -->
 <div id="RightBox">
         <canvas id="myCanvas"></canvas>
 </div>

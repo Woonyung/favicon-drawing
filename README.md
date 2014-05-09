@@ -1,5 +1,5 @@
 ## Favicon Drawing Generator 
-Favicon Drawing Generator is a web page that people can "DRAW" their favicon with analog feeling of drawing experience instead of filling 1 pixels. This is still on-going project. I will keep adding functions. 
+Favicon Drawing Generator is a web page that people can "DRAW" their favicon with analog feeling of drawing experience instead of filling 1 pixel by each. This is still on-going project. I will keep adding functions. 
 
 You can check out web site [here](http://favicon-drawing.herokuapp.com/)
 
@@ -13,3 +13,5 @@ You can check out web site [here](http://favicon-drawing.herokuapp.com/)
 - download --> gives source code with download button
 - download : resize problem
 - add favicon :)
+
+- share button 
