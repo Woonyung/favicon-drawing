@@ -16,7 +16,8 @@ app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 
 app.use(express.json());
-//app.use(bodyParser());
+app.use(express.favicon("public/favicon.ico")); 
+//app.use(bodyParser()); // don't use bodyParser..!!
 app.use('/public', express.static('public'));
 
 
@@ -29,7 +30,6 @@ var Info = mongoose.model('Info', {
 });
 
 
-/// finally this is working!!!!!!!!!!!!!!!!!!!!!
 /////////////////////// ROUTES //////////////////////
 app.get('/', function(req, res){
   res.render('index');
