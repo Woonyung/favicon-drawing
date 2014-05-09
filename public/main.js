@@ -429,7 +429,7 @@ paper.install(window);
 
         tool3.onMouseDrag = function(event) {
             // console.log("mouseDragged");
-            var circle = new Path.Circle({
+            circle = new Path.Circle({
                 center: event.middlePoint,
                 radius: event.delta.length / 2
             });
@@ -461,7 +461,7 @@ paper.install(window);
         }
 
         tool4.onMouseDrag = function(event) {
-            var circle = new Path.Circle({
+            circle = new Path.Circle({
                 center: event.middlePoint,
                 radius: event.delta.length / 2
             });
@@ -505,7 +505,7 @@ paper.install(window);
             // console.log("??????");
             cuurentTool = tool6;
             console.log(currentTool);
-            var path = new Path.Rectangle({
+            path = new Path.Rectangle({
                 point: (event.event.layerX , event.event.layerY),
                 size: 10,
                 fillColor: currentColor
