@@ -429,17 +429,24 @@ paper.install(window);
         // Create two drawing tools.
 
         /////////////////// TOOL1 : COLOR PAPERS ///////////////////
+
         tool1 = new Tool();
         tool1.onMouseDown = function(event){
             currentTool = tool1;
-            var copy = new Raster('brush1');
-            copy.scale(1);
-            copy.position.x = event.event.layerX;
-            copy.position.y = event.event.layerY;
-            // Colors1Copies.addChild(copy);
+            // var copy = new Raster('brush1');
+            // copy.scale(1);
+            // copy.position.x = event.event.layerX;
+            // copy.position.y = event.event.layerY;
+            // // Colors1Copies.addChild(copy);
         }
 
         tool1.onMouseDrag = function(event) {
+            path = new Path.Rectangle({
+                point: event.downPoint,
+                size: event.downPoint.subtract(event.point).length,
+                fillColor: currentColor
+            });
+            path.removeOnDrag();
         }
 
 
@@ -449,7 +456,7 @@ paper.install(window);
         tool2.onMouseDown = function(event){
             currentTool = tool2;
             var circle = new Path.Circle({
-                center: event.middlePoint,
+                center: event.middlePoint/2,
                 radius: Math.random()* 10
             });
             circle.fillColor = currentColor;
@@ -475,30 +482,47 @@ paper.install(window);
 
         tool3.onMouseDown = function(event){
             // console.log("mouseDowned");
-            cuurentTool = tool3;
-            console.log(currentTool);
+            // console.log(currentTool);
+            curentTool = tool3;
+
+
+            //option2
+            // path = new Path();
+            // path.fillColor = '#c5df4e';
+
+            // path.add(event.point);
+
         }
 
         tool3.onMouseDrag = function(event) {
-            // console.log("mouseDragged");
+            console.log("mouseDragged");
             circle = new Path.Circle({
                 center: event.middlePoint,
                 radius: event.delta.length / 2
             });
 
-
             circle.fillColor = currentColor;
-            // circle.fillColor = {
-            //     hue: Math.random() * 360,
-            //     saturation: 0.5,
-            //     brightness: 1
-            // };
 
+
+
+            // option2
+            // var step = event.delta / 2;
+            // step.angle += 90;
+            
+            // var top = event.middlePoint + step;
+            // var bottom = event.middlePoint - step;
+            // // Every drag event, add a segment
+            // // to the path at the position of the mouse:
+            // path.add(top);
+            // path.insert(0, bottom);
+            // path.smooth();
 
         }
 
         tool3.onMouseUp= function(event){
             // console.log("mouseUp");
+
+             
 
         }
 
