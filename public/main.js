@@ -129,8 +129,8 @@ paper.install(window);
 
                 //Add code to clear the canvas
                 paper.project.activeLayer.removeChildren();
+                
                 //Thank them
-                //Show them the galler
 
                 //Send them to the gallery
                 document.location.href = '/gallery';
@@ -182,7 +182,7 @@ paper.install(window);
             currentColor = '#e06962';
             console.log(currentTool);
             if (currentTool){
-                cuurentTool.onMouseDown();
+                curentTool.onMouseDown();
             }
         }
 
@@ -191,7 +191,7 @@ paper.install(window);
             currentColor = '#fda96f';
             console.log(currentTool);
             if (currentTool){
-                cuurentTool.onMouseDown();
+                curentTool.onMouseDown();
             }
         }
 
@@ -200,7 +200,7 @@ paper.install(window);
             currentColor = '#fec871';
             console.log(currentTool);
             if (currentTool){
-                cuurentTool.onMouseDown();
+                curentTool.onMouseDown();
             }
         }
 
@@ -210,7 +210,7 @@ paper.install(window);
             currentColor = '#fee460';
             console.log(currentTool);
             if (currentTool){
-                cuurentTool.onMouseDown();
+                curentTool.onMouseDown();
             }
         }
                
@@ -230,7 +230,7 @@ paper.install(window);
             currentColor = '#83c7a9';
             console.log(currentTool);
             if (currentTool){
-                cuurentTool.onMouseDown();
+                curentTool.onMouseDown();
             }
         }
 
@@ -239,7 +239,7 @@ paper.install(window);
             currentColor = '#7aae97';
             console.log(currentTool);
             if (currentTool){
-                cuurentTool.onMouseDown();
+                curentTool.onMouseDown();
             }
         }
 
@@ -248,7 +248,7 @@ paper.install(window);
             currentColor = '#91c888';
             console.log(currentTool);
             if (currentTool){
-                cuurentTool.onMouseDown();
+                curentTool.onMouseDown();
             }
         }
 
@@ -258,7 +258,7 @@ paper.install(window);
             currentColor = '#b8ed93';
             console.log(currentTool);
             if (currentTool){
-                cuurentTool.onMouseDown();
+                curentTool.onMouseDown();
             }
         }
 
@@ -278,7 +278,7 @@ paper.install(window);
             currentColor = '#99ecc6';
             console.log(currentTool);
             if (currentTool){
-                cuurentTool.onMouseDown();
+                curentTool.onMouseDown();
             }
         }
 
@@ -287,7 +287,7 @@ paper.install(window);
             currentColor = '#99e6ec';
             console.log(currentTool);
             if (currentTool){
-                cuurentTool.onMouseDown();
+                curentTool.onMouseDown();
             }
         }
 
@@ -296,7 +296,7 @@ paper.install(window);
             currentColor = '#a0c9da';
             console.log(currentTool);
             if (currentTool){
-                cuurentTool.onMouseDown();
+                curentTool.onMouseDown();
             }
         }
 
@@ -306,7 +306,7 @@ paper.install(window);
             currentColor = '#7e96af';
             console.log(currentTool);
             if (currentTool){
-                cuurentTool.onMouseDown();
+                curentTool.onMouseDown();
             }
         }
 
@@ -326,7 +326,7 @@ paper.install(window);
             currentColor = '#f4b9de';
             console.log(currentTool);
             if (currentTool){
-                cuurentTool.onMouseDown();
+                currentTool.onMouseDown();
             }
         }
 
@@ -335,7 +335,7 @@ paper.install(window);
             currentColor = 'white';
             console.log(currentTool);
             if (currentTool){
-                cuurentTool.onMouseDown();
+                curentTool.onMouseDown();
             }
         }
 
@@ -344,7 +344,7 @@ paper.install(window);
             currentColor = '#413d3f';
             console.log(currentTool);
             if (currentTool){
-                cuurentTool.onMouseDown();
+                curentTool.onMouseDown();
             }
         }
 
@@ -359,7 +359,7 @@ paper.install(window);
             };
             console.log(currentTool);
             if (currentTool){
-                cuurentTool.onMouseDown();
+                curentTool.onMouseDown();
             }
         }       
 
@@ -481,6 +481,7 @@ paper.install(window);
 
 
         /////////////////// TOOL5 : BUCKET ///////////////////
+        // this guy is the problem.
         tool5 = new Tool();
         tool5.onMouseDown = function(event){
             cuurentTool = tool5;
@@ -488,8 +489,8 @@ paper.install(window);
             path = new Path.Rectangle({
                 point: (0 , 0),
                 size: 600,
-                fillColor: currentColor
             });
+            path.fillColor = currentColor;
         }
 
         tool5.onMouseUp = function(event){
