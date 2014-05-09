@@ -42,6 +42,24 @@ paper.install(window);
             $('#gallery').attr('src','/public/sketch/00_1.png');
         });
 
+
+        // undo //
+        $("#undo").hover(function(){ 
+            $('#undo').attr('src','/public/sketch/00_8_r.png');
+        });
+
+        $("#undo").mouseleave(function(){ 
+            $('#undo').attr('src','/public/sketch/00_8.png');
+        });
+
+        $("#undo").click(function(){ 
+            var pathCount = paper.project.activeLayer.children.length;
+            console.log(paper.project.activeLayer);
+            paper.project.activeLayer.removeChildren(pathCount-1,pathCount);
+        });        
+
+
+
         // reset //
         $("#reset").hover(function(){
             $('#reset').attr('src','/public/sketch/00_2_r.png');
