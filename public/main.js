@@ -450,6 +450,17 @@ paper.install(window);
         }
 
 
+        // ////// Display the raster image
+        // tool1.onMouseDown = function(event){
+        //     currentTool = tool1;
+        //     var copy = new Raster('brush1');
+        //     copy.scale(1);
+        //     copy.position.x = event.event.layerX;
+        //     copy.position.y = event.event.layerY;
+        //     // Colors1Copies.addChild(copy);
+        // }
+
+
         /////////////////// TOOL2 :  EYEDROPPER ///////////////////
         tool2 = new Tool();
         // tool2.minDistance = 20;
