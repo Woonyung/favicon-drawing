@@ -19,30 +19,46 @@
     <div id="close">
         <img src="/public/sketch/00_6.png" id="closeButton">
     </div>
+<br>
+    <div id="smallBoxWrapper">
+        
+        <div id="smallBox1">
+            <a hre="#" id="downloadF"><img src="/public/sketch/00_3.png" id="download"></a><!-- download button -->
+        </div>
 
-    
-    <div id="smallBox1">
-        <a hre="#" id="downloadF"><img src="/public/sketch/00_3.png" id="download"></a><!-- download button -->
+        <div id="smallBox2">
+            <div id="smallBox2Title1">Download the Favicon</div>
+            Download your Favicon by pressing the button and <br>
+            save your favicon.ico file into your webserver directory.<br>
+            <br>
+            Then, copy and paste the following the code inside of your index.html file.
+            <br>
+            <div id="smallBox_blank"></div> <!-- this is the white space-->
+            <div id="codeBox">
+            &#60;link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"&#62;<br>
+            &#60;link rel="icon" href="/favicon.ico" type="image/x-icon"&#62;
+            </div>
+        </div>
+
+
+
+        <form id="theForm"> 
+            <div id="smallBox2-5"></div>
+            <div id="smallBox3">
+                <input id="submit" type="submit" onfocus='blur()'><br>
+            </div>
+            <div id="smallBox4">
+                <div id="smallBox2Title2">Submit your favicon to gallery</div>
+                If you want to submit your super-cool favicon to gallery,<br>
+                press the green button to submit.<br>
+                <br>
+                <input id="theTitle" type="text" name="title" value="title">
+            </div>
+        </form>
     </div>
-
-    <div id="smallBox2"> 
-        Download your Favicon by pressing the button and save your favicon.ico file into your webserver directory.
-        <br>
-
-        Then, copy and paste the following the code inside of your index.html file.
-        <pre><code> 
-            <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-            <link rel="icon" href="/favicon.ico" type="image/x-icon"> 
-        </code></pre>
-    </div>
     
 
 
-    <form id="theForm"> 
-        <input id="theTitle" type="text" name="title" value="title">
-        {{!-- <input id="theName" type="text" name="name" value="artist"> --}}
-        <input id="submit" type="submit" onfocus='blur()'></li> <!-- submit -->
-    </form>
 </div>
 
 
