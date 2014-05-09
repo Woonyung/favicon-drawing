@@ -67,10 +67,10 @@ paper.install(window);
 
         // pop up window - button //
         $("#popupBox").hover(function(){
-            $('#popupBox').attr('src','/public/sketch/00_3_r.png');
+            $('#popupBox').attr('src','/public/sketch/00_7_r.png');
         });
         $("#popupBox").mouseleave(function(){ 
-            $('#popupBox').attr('src','/public/sketch/00_3.png');
+            $('#popupBox').attr('src','/public/sketch/00_7.png');
         });
 
 
@@ -104,7 +104,7 @@ paper.install(window);
 
         // image download function
         $('#downloadF').click(function(){
-            downloadCanvas(this, 'myCanvas', '01.png'); // download the favicon   
+            downloadCanvas(this, 'myCanvas', 'favicon.ico'); // download the favicon   
             // console.log(this.href);
             var imageString = this.href;
             //window.open(this.href, "toDataURL() image", "width=100, height=100");
