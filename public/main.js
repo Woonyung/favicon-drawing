@@ -60,7 +60,7 @@ paper.install(window);
         });        
 
 
-
+        //YES
         // reset //
         $("#reset").hover(function(){
             $('#reset').attr('src','/public/sketch/00_2_r.png');
@@ -433,11 +433,6 @@ paper.install(window);
         tool1 = new Tool();
         tool1.onMouseDown = function(event){
             currentTool = tool1;
-            // var copy = new Raster('brush1');
-            // copy.scale(1);
-            // copy.position.x = event.event.layerX;
-            // copy.position.y = event.event.layerY;
-            // // Colors1Copies.addChild(copy);
         }
 
         tool1.onMouseDrag = function(event) {
