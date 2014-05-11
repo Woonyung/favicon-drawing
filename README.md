@@ -1,4 +1,4 @@
-##### Favicon Drawing Generator 
+## Favicon Drawing Generator 
 ---
 ![](http://www.woonyungchoi.com/itpblog/wp-content/uploads/2014/05/Screen-Shot-2014-05-10-at-11.54.04-AM.png)
 
@@ -17,7 +17,7 @@ You can check out web site [here](http://favicon-drawing.herokuapp.com/)
 
 
 ---
-##### next step
+## Next step
 - make fully-functioned tools...
 	- make square drawing -> pixel (?)
 	- animation ?
